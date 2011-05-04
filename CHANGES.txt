@@ -1,0 +1,8 @@
+2011-05-05 - Johan Charpentier <cyberj@arcagenis.org>
+
+  * Add Jenkins compatibility
+  * Tag 0.2
+
+2011-02-13 - Johan Charpentier <cyberj@arcagenis.org>
+
+  * Initial release

@@ -14,3 +14,7 @@ Just add add to your settings.py::
     IGNORE_TESTS = (
         # Apps to ignore. example : 'django.contrib.auth',
         )
+
+If you want to use `django-jenkins <http://github.com/kmmbvnr/django-jenkins>`_ also add to your settings.py::
+
+    JENKINS_TEST_RUNNER="testignore.jenkins.JenkinsIgnoreTestSuiteRunner"

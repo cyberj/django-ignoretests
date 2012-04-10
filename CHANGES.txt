@@ -1,8 +1,13 @@
-2011-05-05 - Johan Charpentier <cyberj@arcagenis.org>
+2012-04-10 - 0.3
+
+  * Add a try-except block so that django apps that do not have models.py
+   file do not break the test run
+  * Doc fixes
+
+2011-05-05 - 0.2
 
   * Add Jenkins compatibility
-  * Tag 0.2
 
-2011-02-13 - Johan Charpentier <cyberj@arcagenis.org>
+2011-02-13 
 
   * Initial release

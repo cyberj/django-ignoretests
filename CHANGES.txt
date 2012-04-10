@@ -1,7 +1,6 @@
 2012-04-10 - 0.3
 
-  * Add a try-except block so that django apps that do not have models.py
-   file do not break the test run
+  * Add a try-except block so that django apps that do not have models.py file do not break the test run
   * Doc fixes
 
 2011-05-05 - 0.2

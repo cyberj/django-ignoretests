@@ -17,4 +17,4 @@ Just add add to your settings.py::
 
 If you want to use `django-jenkins <http://github.com/kmmbvnr/django-jenkins>`_ also add to your settings.py::
 
-    JENKINS_TEST_RUNNER="testignore.jenkins.JenkinsIgnoreTestSuiteRunner"
+    JENKINS_TEST_RUNNER="ignoretests.jenkins.JenkinsIgnoreTestSuiteRunner"

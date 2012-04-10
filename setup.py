@@ -12,7 +12,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 setup(
     name='django-ignoretests',
     version=version,
-    description="Select some django apps and ignore theirs tests",
+    description="Ignore tests of given django apps",
     long_description=README + '\nChangelog\n---------\n\n' +  CHANGES,
     classifiers=[
      "Programming Language :: Python",

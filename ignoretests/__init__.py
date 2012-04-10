@@ -5,6 +5,7 @@ from django.test.testcases import TestCase
 from django.conf import settings
 import unittest
 
+
 class DjangoIgnoreTestSuiteRunner(DjangoTestSuiteRunner):
     def build_suite(self, test_labels, extra_tests=None, **kwargs):
         suite = unittest.TestSuite()
@@ -23,7 +24,10 @@ class DjangoIgnoreTestSuiteRunner(DjangoTestSuiteRunner):
             for ilabel in ignored_labels:
                 if "." in ilabel:
                     ilabel = ilabel.split(".")[-1]
-                app = get_app(ilabel)
+                try:
+                    app = get_app(ilabel)
+                except Exception as e:
+                    print e
                 ignored_apps.append(app)
 
             for app in get_apps():
@@ -35,4 +39,3 @@ class DjangoIgnoreTestSuiteRunner(DjangoTestSuiteRunner):
                 suite.addTest(test)
 
         return reorder_suite(suite, (TestCase,))
-

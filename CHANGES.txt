@@ -1,3 +1,7 @@
+2012-04-19 - 0.3.2
+
+  * Fix setup and MANIFEST
+
 2012-04-10 - 0.3
 
   * Add a try-except block so that django apps that do not have models.py file do not break the test run

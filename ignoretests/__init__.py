@@ -7,10 +7,10 @@ import unittest
 
 try:
     from django.test.simple import reorder_suite
-    
+
 except ImportError:
     from django.test.runner import reorder_suite
-    
+
 class DjangoIgnoreTestSuiteRunner(DjangoTestSuiteRunner):
     def build_suite(self, test_labels, extra_tests=None, **kwargs):
         suite = unittest.TestSuite()

@@ -1,11 +1,16 @@
 #!/usr/bin/python
 from django.db.models import get_apps, get_app
-from django.test.simple import DjangoTestSuiteRunner, reorder_suite, build_test, build_suite
+from django.test.simple import DjangoTestSuiteRunner, build_test, build_suite
 from django.test.testcases import TestCase
 from django.conf import settings
 import unittest
 
-
+try:
+    from django.test.simple import reorder_suite
+    
+except ImportError:
+    from django.test.runner import reorder_suite
+    
 class DjangoIgnoreTestSuiteRunner(DjangoTestSuiteRunner):
     def build_suite(self, test_labels, extra_tests=None, **kwargs):
         suite = unittest.TestSuite()

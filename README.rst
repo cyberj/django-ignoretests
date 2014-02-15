@@ -1,7 +1,7 @@
 django-ignoretests
 ==================
 
-Application to ignore some tests from a Django project.
+Application to ignore some tests from a Django project (1.6 comptatible).
 
 https://github.com/cyberj/django-ignoretests
 

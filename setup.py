@@ -3,14 +3,14 @@ import sys, os
 
 from setuptools import setup, find_packages
 
-version = '0.3.3'
+version = '0.4'
 
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
 setup(
-    name='django-ignoretests',
+    name='django-ignoretests2',
     version=version,
     description="Ignore tests of given django apps",
     long_description=README + '\nChangelog\n---------\n\n' +  CHANGES,

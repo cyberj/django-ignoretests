@@ -1,3 +1,7 @@
+2013-02-15 - 0.4
+
+  * Change Pypi package name
+
 2013-11-21 - 0.3.3
 
   * Fixed import for Django 1.6

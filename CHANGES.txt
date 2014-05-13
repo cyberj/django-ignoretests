@@ -1,4 +1,8 @@
-2013-02-15 - 0.4
+2014-05-13 - 0.4.1
+
+  * Don't fail on exceptions 
+
+2014-02-15 - 0.4
 
   * Change Pypi package name
 

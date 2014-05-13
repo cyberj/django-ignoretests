@@ -33,7 +33,8 @@ class DjangoIgnoreTestSuiteRunner(DjangoTestSuiteRunner):
                     app = get_app(ilabel)
                 except Exception as e:
                     print e
-                ignored_apps.append(app)
+                else:
+                    ignored_apps.append(app)
 
             for app in get_apps():
                 if app not in ignored_apps:

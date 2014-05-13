@@ -1,5 +1,5 @@
-django-ignoretests
-==================
+django-ignoretests2
+===================
 
 Application to ignore some tests from a Django project (1.6 comptatible).
 
